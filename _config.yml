@@ -1,0 +1,19 @@
+# Site settings
+title: Stefan Maric
+tagline: Web Developer
+email: me@stefanmaric.com
+description: "Stefan Maric - Web Developer"
+baseurl: ""
+url: "http://stefanmaric.com"
+twitter_username: stefanmaric_
+github_username: stefanmaric
+author:
+  name: Stefan Maric
+  url: http://stefanmaric.com
+  email: me@stefanmaric.com
+github:
+  repo: https://github.com/stefanmaric/stefanmaric.github.io
+
+# Build settings
+markdown: kramdown
+permalink: pretty
