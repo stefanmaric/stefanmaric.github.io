@@ -1,5 +1,67 @@
 ---
 layout: default
 ---
-<h1>Stefan Maric</h1>
-<h2>Web Developer</h2>
+<section id="home" class="tall">
+  <h1>Stefan Maric</h1>
+  <h2>Web Developer</h2>
+</section>
+<section id="about" class="tall">
+  <p>Hi there! I'm Stefan Alexander Maric, an early-twenties Venezuelan Web Developer, 
+  a MongoDB Certified DBA &amp; Developer, and an Information Engineering student. 
+  I also love squirrels.
+  </p>
+</section>
+<section id="contact" class="tall">
+  <h2>Let's be friends!</h2>
+  <ul>
+
+    {% if site.email %}
+    <li>
+      <a href="mailto:{{ site.email }}">
+        Email
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.twitter_username %}
+    <li>
+      <a href="https://twitter.com/{{ site.twitter_username }}">
+        Twitter
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.facebook_username %}
+    <li>
+      <a href="https://www.facebook.com/{{ site.facebook_username }}">
+        Facebook
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.linkedin_url %}
+    <li>
+      <a href="{{ site.linkedin_url }}">
+        LinkedIn
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.skype_username %}
+    <li>
+      <a href="skype:{{ site.skype_username }}">
+        Skype
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.github_username %}
+    <li>
+      <a href="https://github.com/{{ site.github_username }}">
+        Github
+      </a>
+    </li>
+    {% endif %}
+
+  </ul>
+</section>
