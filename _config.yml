@@ -1,12 +1,16 @@
 # Site settings
-title: "Stefan Maric - Web Developer, MongoDBA and Squirrel Lover"
+title: "Stefan Alexander Maric - Web Developer, MongoDB DBA, and Squirrel Lover"
 tagline: Web Developer
-email: me@stefanmaric.com
-description: "Stefan Maric - Web Developer, MongoDBA and Squirrel Lover"
+description: "Stefan Maric - Web Developer, MongoDBA, and Squirrel Lover"
 baseurl: ""
 url: "http://stefanmaric.com"
+email: me@stefanmaric.com
 twitter_username: stefanmaric_
 github_username: stefanmaric
+facebook_username: StefanAlexanderMaric
+skype_username: alexstefan922
+google_username: +StefanAlexanderMaric
+linkedin_url: http://ve.linkedin.com/in/maricstefan/en
 author:
   name: Stefan Maric
   url: http://stefanmaric.com
