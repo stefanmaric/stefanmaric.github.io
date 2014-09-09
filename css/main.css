@@ -108,3 +108,12 @@ section.tall {
 footer .legal {
 	text-align: center;
 }
+
+
+
+@media all and (orientation:landscape) {
+  #home > div {
+    width: 50%;
+    display: inline;
+  }
+}

@@ -2,9 +2,13 @@
 layout: default
 ---
 <section id="home" class="tall">
-  <img src="{{ "/img/logo.png" | prepend: site.baseurl }}" alt="Stefan Maric Logo" />
-  <h1>Stefan Maric</h1>
-  <h2>Web Developer</h2>
+  <div>
+    <img src="{{ "/img/logo.png" | prepend: site.baseurl }}" alt="Stefan Maric Logo" />
+  </div>
+  <div>
+    <h1>Stefan Maric</h1>
+    <h2>Web Developer</h2>
+  </div>
 </section>
 <section id="about" class="tall">
   <p>Hi there! I'm Stefan Alexander Maric, an early-twenties Venezuelan Web Developer, 
@@ -36,6 +40,14 @@ layout: default
     <li>
       <a href="https://www.facebook.com/{{ site.facebook_username }}">
         Facebook
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.google_username %}
+    <li>
+      <a href="https://plus.google.com/{{ site.google_username }}">
+        Google+
       </a>
     </li>
     {% endif %}
