@@ -36,6 +36,16 @@ sup {
   font-size: .6em;
 }
 
+a {
+  color: #03b1c0;
+  transition: all 250ms;
+}
+
+a:hover,
+a:active {
+  color: #cc4c87;
+}
+
 section {
 	padding: 2em 1em;
 	padding: 6vw 5vw;
