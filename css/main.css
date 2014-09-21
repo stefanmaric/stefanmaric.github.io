@@ -1,6 +1,17 @@
 * {
   box-sizing: border-box;
-  transition: all 50ms;
+}
+
+div,
+span,
+h1, h2, h3, h4, h5, h6,
+p,
+a,
+section,
+img,
+ul,
+li {
+  transition: all 100ms;
 }
 
 .clearfix:before,
