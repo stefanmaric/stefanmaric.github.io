@@ -110,6 +110,7 @@ section.tall {
 }
 
 #contact ul > li > a {
+  font-size: 6vw;
   display: inline-block;
   padding: .4em .6em;
 	text-transform: uppercase;
@@ -163,6 +164,15 @@ footer .legal {
 
   #contact h2 {
     font-size: 5vw;
+    margin: 0;
+  }
+
+  #contact ul {
+    margin: 0;
+  }
+
+  #contact ul > li > a {
+    font-size: 3vw;
   }
 
 
