@@ -31,10 +31,10 @@ layout: default
       </li>
       {% endif %}
 
-      {% if site.twitter_username %}
+      {% if site.linkedin_url %}
       <li>
-        <a href="https://twitter.com/{{ site.twitter_username }}">
-          Twitter
+        <a href="{{ site.linkedin_url }}">
+          LinkedIn
         </a>
       </li>
       {% endif %}
@@ -47,18 +47,10 @@ layout: default
       </li>
       {% endif %}
 
-      {% if site.google_username %}
+      {% if site.twitter_username %}
       <li>
-        <a href="https://plus.google.com/{{ site.google_username }}">
-          Google+
-        </a>
-      </li>
-      {% endif %}
-
-      {% if site.linkedin_url %}
-      <li>
-        <a href="{{ site.linkedin_url }}">
-          LinkedIn
+        <a href="https://twitter.com/{{ site.twitter_username }}">
+          Twitter
         </a>
       </li>
       {% endif %}
@@ -67,6 +59,14 @@ layout: default
       <li>
         <a href="skype:{{ site.skype_username }}">
           Skype
+        </a>
+      </li>
+      {% endif %}
+      
+      {% if site.google_username %}
+      <li>
+        <a href="https://plus.google.com/{{ site.google_username }}">
+          Google+
         </a>
       </li>
       {% endif %}
