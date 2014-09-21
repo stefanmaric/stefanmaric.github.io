@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  transition: all 50ms;
 }
 
 .clearfix:before,
@@ -140,7 +141,6 @@ footer .legal {
   display: block;
   float: left;
   width: 100%;
-  transition: all 50ms;
 }
 
 @media all and (orientation:landscape) {
@@ -191,6 +191,5 @@ footer .legal {
   #contact ul > li > a {
     font-size: 3vw;
   }
-
 
 }
