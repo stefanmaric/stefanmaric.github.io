@@ -20,7 +20,7 @@ body {
 
 body {
   text-rendering: optimizelegibility;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   color: #333;
 }
 
@@ -30,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Georgia, Cambria, Times, "Times New Roman", serif;
+  font-family: "Roboto Slab", Georgia, Cambria, Times, "Times New Roman", serif;
   color: #222;
 }
 
@@ -155,7 +155,7 @@ footer .legal {
   #home h1 {
     font-size: 1.9em;
     font-size: 7vw;
-    padding-top: 1.4em;
+    padding-top: 1.3em;
   }
 
   #home h2 {
