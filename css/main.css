@@ -16,6 +16,7 @@ html,
 body {
   font-size: 100%;
   height: 100%;
+  -webkit-text-size-adjust: 100%; /* Needed to fix iOS orientation change bug */
 }
 
 body {
@@ -134,6 +135,12 @@ footer .legal {
   text-align: center;
 }
 
+#home > div,
+#contact > div {
+  display: block;
+  float: left;
+  width: 100%;
+}
 
 @media all and (orientation:landscape) {
 
@@ -144,8 +151,6 @@ footer .legal {
 
   #home > div {
     width: 40%;
-    display: block;
-    float: left;
   }
 
   #home > div + div {
@@ -166,8 +171,6 @@ footer .legal {
 
   #contact > div {
     width: 50%;
-    display: block;
-    float: left;
   }
 
   #contact > div + div {
