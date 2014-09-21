@@ -2,18 +2,6 @@
   box-sizing: border-box;
 }
 
-div,
-span,
-h1, h2, h3, h4, h5, h6,
-p,
-a,
-section,
-img,
-ul,
-li {
-  transition: all 100ms;
-}
-
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -28,11 +16,9 @@ html,
 body {
   font-size: 100%;
   height: 100%;
-  -webkit-text-size-adjust: 100%; /* Needed to fix iOS orientation change bug */
 }
 
 body {
-  text-rendering: optimizelegibility;
   font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   color: #333;
 }
