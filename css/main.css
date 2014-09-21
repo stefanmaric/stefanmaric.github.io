@@ -140,6 +140,7 @@ footer .legal {
   display: block;
   float: left;
   width: 100%;
+  transition: all 50ms;
 }
 
 @media all and (orientation:landscape) {
