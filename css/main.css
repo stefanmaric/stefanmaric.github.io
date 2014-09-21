@@ -177,6 +177,7 @@ footer .legal {
   #contact h2 {
     font-size: 5vw;
     margin: 0;
+    padding-top: .9em;
   }
 
   #contact ul {
