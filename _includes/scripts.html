@@ -10,36 +10,5 @@
   ga('send', 'pageview');
 </script>
 <!-- Safari BugFix on Orientation Change -->
-<script type="text/javascript">
-
-  (function(w){
-
-    var ua = navigator.userAgent.toLowerCase();
-
-    if( !(ua.indexOf("applewebkit") > -1 ) ){
-      return;
-    }
-
-    var doc = w.document;
-
-    if( !doc.querySelectorAll ){ return; }
-
-    var repaintOn = "h1,h2,h3,h4,h5,h6,section,div,span,p,a";
-
-    function repaint() {
-
-      var elements = doc.querySelectorAll(repaintOn);
-
-      for (var i = elements.length - 1; i >= 0; i--) {
-        var elmIndex = elements[i].style.zIndex;
-        elements[i].style.zIndex = 1;
-        elements[i].style.zIndex = elmIndex;
-      };
-
-    }
-
-    w.addEventListener( "orientationchange", repaint(), false );
-
-  })( this );
-
-</script>
+<script src="{{ "/js/viewport-units-buggyfill.js" | prepend: site.baseurl }}"></script>
+<script>window.viewportUnitsBuggyfill.init();</script>
