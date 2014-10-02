@@ -19,5 +19,8 @@ github:
   repo: https://github.com/stefanmaric/stefanmaric.github.io
 
 # Build settings
+source: ./_src
+destination: ./_site
+exclude: ["**/*.styl","css/vendor/","js/vendor"]
 markdown: kramdown
 permalink: pretty
