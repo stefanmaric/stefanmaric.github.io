@@ -1,0 +1,41 @@
+{
+  "name": "stefanmaric.com",
+  "version": "0.1.0",
+  "description": "Stefan Maric's personal page.",
+  "main": "README.md",
+  "devDependencies": {
+    "del": "^0.1.3",
+    "gulp": "^3.8.8",
+    "gulp-autoprefixer": "^1.0.1",
+    "gulp-cache": "^0.2.2",
+    "gulp-concat": "^2.4.1",
+    "gulp-imagemin": "^1.0.1",
+    "gulp-jshint": "^1.8.5",
+    "gulp-livereload": "^2.1.1",
+    "gulp-notify": "^1.8.0",
+    "gulp-stylus": "^1.3.3",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^1.0.1"
+  },
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stefanmaric/stefanmaric.github.io.git"
+  },
+  "keywords": [
+    "personal",
+    "web",
+    "page",
+    "jekyll",
+    "gulp",
+    "html"
+  ],
+  "author": "Stefan Maric",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/stefanmaric/stefanmaric.github.io/issues"
+  },
+  "homepage": "https://github.com/stefanmaric/stefanmaric.github.io"
+}
