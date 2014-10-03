@@ -1,4 +1,4 @@
-// Load plugins
+// Load plugins and stuff
 var gulp = require('gulp'),
     stylus = require('gulp-stylus'),
     autoprefixer = require('gulp-autoprefixer'),
@@ -17,6 +17,7 @@ var gulp = require('gulp'),
 gulp.task('styles', function() {
   return gulp.src('css/main.styl')
     .pipe(stylus({
+      // Follow includes of regular CSS
       'include css': true
     }))
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
@@ -27,6 +28,7 @@ gulp.task('styles', function() {
 
 // Scripts
 gulp.task('scripts', function() {
+  // Take all JS except js/build.js, concat it and uglify it
   return gulp.src(['js/**/*.js','!js/build.js'])
     .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter('default'))
@@ -44,14 +46,14 @@ gulp.task('images', function() {
     .pipe(notify({ message: 'Images task complete' }));
 });
 
-// Clean
+// Clean builds
 gulp.task('clean', function(cb) {
     del(['css/build.css', 'js/build.js'], cb)
 });
 
 // Default task
 gulp.task('default', ['clean'], function() {
-    gulp.start('watch');
+    gulp.start(['styles','scripts','images','watch']);
 });
 
 // Watch
@@ -64,7 +66,7 @@ gulp.task('watch', function() {
       console.log('jekyll: ' + data);
   });
 
-  // Watch .scss files
+  // Watch .styl files
   gulp.watch('css/**/*.styl', ['styles']);
 
   // Watch .js files
@@ -76,7 +78,7 @@ gulp.task('watch', function() {
   // Create LiveReload server
   livereload.listen();
 
-  // Watch any files in dist/, reload on change
+  // Watch any html, css or js files in _site/, reload on change
   gulp.watch(['_site/**/*.css','_site/**/*.js','_site/**/*.html']).on('change', livereload.changed);
 
 });
