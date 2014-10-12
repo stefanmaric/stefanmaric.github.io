@@ -7,7 +7,6 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     rename = require('gulp-rename')
     concat = require('gulp-concat'),
-    notify = require('gulp-notify'),
     cache = require('gulp-cache'),
     livereload = require('gulp-livereload'),
     del = require('del'),
@@ -22,8 +21,7 @@ gulp.task('styles', function() {
     }))
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
     .pipe(rename('build.css'))
-    .pipe(gulp.dest('css/'))
-    .pipe(notify({ message: 'Styles compiled' }));
+    .pipe(gulp.dest('css/'));
 });
 
 // Scripts
@@ -34,16 +32,14 @@ gulp.task('scripts', function() {
     .pipe(jshint.reporter('default'))
     .pipe(concat('build.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('js/'))
-    .pipe(notify({ message: 'Scripts task complete' }));
+    .pipe(gulp.dest('js/'));
 });
 
 // Images
 gulp.task('images', function() {
   return gulp.src('img/**/*')
     .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
-    .pipe(gulp.dest('img'))
-    .pipe(notify({ message: 'Images task complete' }));
+    .pipe(gulp.dest('img'));
 });
 
 // Clean builds
