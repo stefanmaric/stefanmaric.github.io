@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     stylus = require('gulp-stylus'),
     autoprefixer = require('gulp-autoprefixer'),
     jshint = require('gulp-jshint'),
+    stylish = require('jshint-stylish'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
     rename = require('gulp-rename')
@@ -29,7 +30,7 @@ gulp.task('scripts', function() {
   // Take all JS except js/build.js, concat it and uglify it
   return gulp.src(['js/**/*.js','!js/build.js'])
     .pipe(jshint('.jshintrc'))
-    .pipe(jshint.reporter('default'))
+    .pipe(jshint.reporter(stylish))
     .pipe(concat('build.js'))
     .pipe(uglify())
     .pipe(gulp.dest('js/'));
