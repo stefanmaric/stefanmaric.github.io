@@ -1,4 +1,4 @@
-@import "vendor/normalize.css"
+@import "necolas/normalize.css";
 
 * {
   box-sizing: border-box;
@@ -52,10 +52,6 @@ a:active {
 
 section {
   padding: 6vw 5vw;
-}
-
-section.tall {
-  // min-height: 100vh;
 }
 
 section.tall {
