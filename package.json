@@ -19,7 +19,7 @@
     "rimraf": "^2.4.2"
   },
   "scripts": {
-    "clean": "rimraf _site/ css/build.css js/build.js",
+    "clean": "rimraf _site/ css/build.css",
     "test": ""
   },
   "repository": {

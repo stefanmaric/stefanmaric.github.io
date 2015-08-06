@@ -9,9 +9,10 @@
   ga('require', 'linkid', 'linkid.js');
   ga('send', 'pageview');
 </script>
-<!-- Safari BugFix on Orientation Change -->
-<script src="{{ "/js/build.js" | prepend: site.baseurl }}"></script>
-<script>window.viewportUnitsBuggyfill.init();</script>
+
+<!-- Viewport CSS units polyfill -->
+<script src="{{ '/js/vendor/vminpoly/tokenizer.js' | prepend: site.baseurl }}"></script>
+<script src="{{ '/js/vendor/vminpoly/vminpoly.js' | prepend: site.baseurl }}"></script>
 
 <!-- page specific scripts -->
 {% for script in page.scripts %}

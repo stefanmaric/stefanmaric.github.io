@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     stylish = require('jshint-stylish'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
-    rename = require('gulp-rename')
+    rename = require('gulp-rename'),
     concat = require('gulp-concat'),
     cache = require('gulp-cache'),
     livereload = require('gulp-livereload'),
@@ -25,17 +25,6 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('css/'));
 });
 
-// Scripts
-gulp.task('scripts', function() {
-  // Take all JS except js/build.js, concat it and uglify it
-  return gulp.src(['js/**/*.js','!js/build.js'])
-    .pipe(jshint('.jshintrc'))
-    .pipe(jshint.reporter(stylish))
-    .pipe(concat('build.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('js/'));
-});
-
 // Images
 gulp.task('images', function() {
   return gulp.src('img/**/*')
@@ -45,12 +34,12 @@ gulp.task('images', function() {
 
 // Clean builds
 gulp.task('clean', function(cb) {
-    del(['css/build.css', 'js/build.js'], cb)
+    del(['css/build.css'], cb);
 });
 
 // Default task
 gulp.task('default', ['clean'], function() {
-    gulp.start(['styles','scripts','images','watch']);
+    gulp.start(['styles','images','watch']);
 });
 
 // Watch
@@ -65,9 +54,6 @@ gulp.task('watch', function() {
 
   // Watch .styl files
   gulp.watch('css/**/*.styl', ['styles']);
-
-  // Watch .js files
-  gulp.watch('js/**/*.js', ['scripts']);
 
   // Watch image files
   gulp.watch('img/**/*', ['images']);

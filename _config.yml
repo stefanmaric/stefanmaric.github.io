@@ -19,6 +19,6 @@ github:
   repo: https://github.com/stefanmaric/stefanmaric.github.io
 
 # Build settings
-exclude: ["CNAME","gulpfile.js","package.json","node_modules","**/*.styl","css/vendor","js/vendor"]
+exclude: ["CNAME","gulpfile.js","package.json","node_modules","**/*.styl","css/vendor"]
 markdown: kramdown
 permalink: pretty
