@@ -1,10 +1,11 @@
 ---
 layout: default
+title: Is your browser Opera Mini?
+description: Check if your browser is using Opera's compression servers, like Opera Mini does.
 ---
 <h1 style="text-align: center; margin: 46vh auto;">
 <script type="text/javascript">
 	var isOperaMini = Object.prototype.toString.call(window.operamini) === '[object OperaMini]';
-	if (isOperaMini) { document.write('YES'); }
-	else { document.write('NO'); }
+	document.write(isOperaMini ? 'YES' : 'NO');
 </script>
 </h1>
