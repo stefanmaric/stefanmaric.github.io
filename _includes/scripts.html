@@ -12,3 +12,8 @@
 <!-- Safari BugFix on Orientation Change -->
 <script src="{{ "/js/build.js" | prepend: site.baseurl }}"></script>
 <script>window.viewportUnitsBuggyfill.init();</script>
+
+<!-- page specific scripts -->
+{% for script in page.scripts %}
+<script type="text/javascript" src="{{ script | prepend: site.baseurl }}"></script>
+{% endfor %}
