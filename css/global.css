@@ -1,4 +1,5 @@
 @import "necolas/normalize.css";
+@import "MozMorris/tomorrow-pygments:css/tomorrow.css";
 
 * {
   box-sizing: border-box;

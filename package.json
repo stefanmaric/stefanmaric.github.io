@@ -4,13 +4,13 @@
   "description": "Stefan Maric's personal page.",
   "main": "README.md",
   "devDependencies": {
-    "autoprefixer": "^5.2.0",
-    "clean-css": "^3.3.7",
+    "autoprefixer": "^6.2.3",
+    "clean-css": "^3.4.9",
     "duo": "^0.15.3",
-    "livereload": "^0.3.7",
+    "livereload": "^0.4.0",
     "ntee": "^1.1.4",
-    "postcss-cli": "^1.5.0",
-    "rimraf": "^2.4.2"
+    "postcss-cli": "^2.3.3",
+    "rimraf": "^2.5.0"
   },
   "scripts": {
     "clean": "rimraf _site/",
