@@ -1,0 +1,123 @@
+---
+# Use a comment to ensure Jekyll reads the file to be transformed into CSS later
+# only main files contain this front matter, not partials.
+---
+
+@import "variables";
+
+section {
+  padding: 6vw 5vw;
+  text-align: center;
+  &.tall {
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+  }
+}
+
+h2 {
+  font-size:9vw;
+  letter-spacing:.1em;
+  word-spacing:.2em
+}
+
+p {
+  font-size: 4vw;
+  line-height: 1.6em;
+}
+
+#home {
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    max-height: 80%;
+  }
+
+  h1 {
+    font-size: 14vw;
+    letter-spacing: -0.025em;
+    margin: .125em 0;
+  }
+
+  h2 {
+    font-size: 5vw;
+    font-family: $font-family-base;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin-top: 0.125em;
+    letter-spacing: 0.4em;
+    word-spacing: 1.1em;
+  }
+}
+
+#contact ul {
+  list-style: outside none none;
+  padding: 0;
+  > li {
+    display: inline-block;
+    > a {
+      display: inline-block;
+      font-size: 6vw;
+      letter-spacing: 0.1em;
+      padding: .4em .6em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
+
+#home > div,
+#contact > div {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+@media all and (orientation:landscape) {
+
+  #home {
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    > div {
+      width: 40%;
+      + div {
+        width: 60%;
+      }
+    }
+
+    h1 {
+      font-size: 7vw;
+      padding-top: 1.3em;
+    }
+
+    h2 {
+      font-size: 2.6vw;
+    }
+  }
+
+  #contact {
+    > div {
+      width: 50%;
+      + div {
+        width: 50%;
+      }
+    }
+
+    h2 {
+      font-size: 3vw;
+      margin: 0;
+      padding-top: .9em;
+    }
+
+    > ul {
+      margin: 0;
+      > li > a {
+        font-size: 3vw;
+      }
+    }
+  }
+
+}

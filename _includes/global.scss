@@ -1,0 +1,39 @@
+@import "reboot";
+@import "variables";
+
+.clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+body {
+  font-family: $font-family-base;
+  color: $body-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headings-font-family;
+  color: #222;
+}
+
+a {
+  color: $link-color;
+  text-decoration: underline;
+  transition: all 150ms;
+  &:hover,
+  &:active {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+}
