@@ -8,10 +8,17 @@
 
     {% seo %}
 
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+      {% capture include_to_scssify %}
+        {% include _reboot.scss %}
+      {% endcapture %}
+      {{ include_to_scssify | scssify }}
+    </style>
 
     <link rel="stylesheet" href="{{ "/css/global.css" | prepend: site.github.url }}">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
 
     <!-- page specific stylesheets -->
     {% for stylesheet in page.stylesheets %}
