@@ -1,9 +1,10 @@
 # Site settings
-title: "Stefan Alexander Maric - Web Developer, MongoDB Certified Professional℠, and Squirrel Lover"
-tagline: Web Developer
-description: "Stefan Maric - Web Developer, MongoDBA, and Squirrel Lover"
+title: "Stefan Maric"
+tagline: "Web Developer"
+description: "Web Developer, MongoDB Certified Professional℠, and Squirrel Lover"
 baseurl: ""
 url: "http://stefanmaric.com"
+
 email: me@stefanmaric.com
 twitter_username: stefanmaric_
 github_username: stefanmaric
