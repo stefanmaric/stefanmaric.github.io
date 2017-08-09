@@ -46,57 +46,57 @@ layout: default
   <div>
     <ul class="clearfix">
 
-      {% if site.email %}
+      {% if site.author.email %}
       <li>
-        <a href="mailto:{{ site.email }}">
+        <a href="mailto:{{ site.author.email }}">
           Email
         </a>
       </li>
       {% endif %}
 
-      {% if site.linkedin_url %}
+      {% if site.linkedin.username %}
       <li>
-        <a href="{{ site.linkedin_url }}">
+        <a href="https://www.linkedin.com/in/{{ site.linkedin.username }}">
           LinkedIn
         </a>
       </li>
       {% endif %}
 
-      {% if site.facebook_username %}
+      {% if site.facebook.username %}
       <li>
-        <a href="https://www.facebook.com/{{ site.facebook_username }}">
+        <a href="https://www.facebook.com/{{ site.facebook.username }}">
           Facebook
         </a>
       </li>
       {% endif %}
 
-      {% if site.twitter_username %}
+      {% if site.twitter.username %}
       <li>
-        <a href="https://twitter.com/{{ site.twitter_username }}">
+        <a href="https://twitter.com/{{ site.twitter.username }}">
           Twitter
         </a>
       </li>
       {% endif %}
 
-      {% if site.skype_username %}
+      {% if site.skype.username %}
       <li>
-        <a href="skype:{{ site.skype_username }}">
+        <a href="skype:{{ site.skype.username }}">
           Skype
         </a>
       </li>
       {% endif %}
 
-      {% if site.google_username %}
+      {% if site.google.username %}
       <li>
-        <a href="https://plus.google.com/{{ site.google_username }}">
+        <a href="https://plus.google.com/{{ site.google.username }}">
           Google+
         </a>
       </li>
       {% endif %}
 
-      {% if site.github_username %}
+      {% if site.github.username %}
       <li>
-        <a href="https://github.com/{{ site.github_username }}">
+        <a href="https://github.com/{{ site.github.username }}">
           Github
         </a>
       </li>

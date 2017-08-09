@@ -3,18 +3,23 @@ tagline: "Web Developer"
 description: "Web Developer, MongoDB Certified Professional℠, and Squirrel Lover"
 logo: /img/logo.png
 
-email: me@stefanmaric.com
-twitter_username: stefanmaric_
-github_username: stefanmaric
-facebook_username: StefanAlexanderMaric
-skype_username: alexstefan922
-google_username: +StefanAlexanderMaric
-linkedin_url: https://linkedin.com/in/maricstefan/en
-
 author:
   name: Stefan Maric
   url: http://stefanmaric.com
   email: me@stefanmaric.com
+
+facebook:
+  username: StefanAlexanderMaric
+github:
+  username: stefanmaric
+google:
+  username: +StefanAlexanderMaric
+linkedin:
+  username: maricstefan
+skype:
+  username: alexstefan922
+twitter:
+  username: stefanmaric_
 
 social:
   name: Stefan Maric
