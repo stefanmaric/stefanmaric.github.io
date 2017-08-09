@@ -11,9 +11,9 @@
 </script>
 
 <!-- Viewport CSS units polyfill -->
-<script src="{{ '/js/vendor/console-polyfill/index.js' | prepend: site.baseurl }}"></script>
+<script src="{{ '/js/vendor/console-polyfill/index.js' | prepend: site.github.url }}"></script>
 
 <!-- page specific scripts -->
 {% for script in page.scripts %}
-<script type="text/javascript" src="{{ script | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ script | prepend: site.github.url }}"></script>
 {% endfor %}

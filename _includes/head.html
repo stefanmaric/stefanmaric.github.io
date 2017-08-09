@@ -7,11 +7,11 @@
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="{{ "/css/global.min.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/global.min.css" | prepend: site.github.url }}">
 
   <!-- page specific stylesheets -->
   {% for stylesheet in page.stylesheets %}
-  <link rel="stylesheet" href="{{ stylesheet | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ stylesheet | prepend: site.github.url }}">
   {% endfor %}
 
   <!--[if lt IE 9]>

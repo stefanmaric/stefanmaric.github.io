@@ -2,8 +2,6 @@
 title: "Stefan Maric"
 tagline: "Web Developer"
 description: "Web Developer, MongoDB Certified Professional℠, and Squirrel Lover"
-baseurl: ""
-url: "http://stefanmaric.com"
 
 email: me@stefanmaric.com
 twitter_username: stefanmaric_
@@ -12,16 +10,12 @@ facebook_username: StefanAlexanderMaric
 skype_username: alexstefan922
 google_username: +StefanAlexanderMaric
 linkedin_url: http://ve.linkedin.com/in/maricstefan/en
+
 author:
   name: Stefan Maric
   url: http://stefanmaric.com
   email: me@stefanmaric.com
-github:
-  repo: https://github.com/stefanmaric/stefanmaric.github.io
 
-# Build settings
-exclude: ["node_modules","components"]
 markdown: kramdown
-permalink: pretty
 plugins:
   - jekyll-seo-tag
