@@ -22,3 +22,5 @@ github:
 exclude: ["node_modules","components"]
 markdown: kramdown
 permalink: pretty
+plugins:
+  - jekyll-seo-tag
