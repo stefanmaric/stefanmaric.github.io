@@ -1,7 +1,7 @@
-# Site settings
 title: "Stefan Maric"
 tagline: "Web Developer"
 description: "Web Developer, MongoDB Certified Professional℠, and Squirrel Lover"
+logo: /img/logo.png
 
 email: me@stefanmaric.com
 twitter_username: stefanmaric_
@@ -9,12 +9,21 @@ github_username: stefanmaric
 facebook_username: StefanAlexanderMaric
 skype_username: alexstefan922
 google_username: +StefanAlexanderMaric
-linkedin_url: http://ve.linkedin.com/in/maricstefan/en
+linkedin_url: https://linkedin.com/in/maricstefan/en
 
 author:
   name: Stefan Maric
   url: http://stefanmaric.com
   email: me@stefanmaric.com
+
+social:
+  name: Stefan Maric
+  links:
+    - https://twitter.com/stefanmaric_
+    - https://www.facebook.com/StefanAlexanderMaric
+    - https://linkedin.com/in/maricstefan/en
+    - https://plus.google.com/+StefanAlexanderMaric
+    - https://github.com/stefanmaric
 
 markdown: kramdown
 plugins:
