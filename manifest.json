@@ -1,0 +1,9 @@
+{  
+  "short_name": "Stefan Maric",  
+  "name": "Stefan Maric - Web Developer",  
+  "start_url": "./?utm_source=web_app_manifest",
+  "background_color": "#fff",
+  "theme_color": "#00b3ab", 
+  "display": "browser",  
+  "orientation": "any"  
+}
